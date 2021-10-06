@@ -21,6 +21,7 @@ const App = () => {
             <Person
                 activePeriod={activePeriod}
                 setActivePeriod={setActivePeriod}/>
+
                 {dashboardData.map(item=> <DashboardItem key={item.title} {...item} activePeriod={activePeriod}/>)}
 
             </div>
